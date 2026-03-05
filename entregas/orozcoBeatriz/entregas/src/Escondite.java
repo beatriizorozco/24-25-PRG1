@@ -58,7 +58,7 @@ public class Escondite {
                 System.out.println(
                         "No es posible buscar en ese lugar. Ha introducido una id de escondite fuera del rango permitido. Inténtelo de nuevo");
             } else {
-                esconditeRevisado(numeroEsconditeUsuario);
+                revisarEscondite(numeroEsconditeUsuario);
                 if (ocultarse) {
                     System.out.println("No has encontrado a ninguno de los niños.");
                 } else if (niñoEncontrado(esconditeNiño1, numeroEsconditeUsuario)) {
@@ -90,7 +90,7 @@ public class Escondite {
         return numeroEsconditeElegido;
     }
 
-    private static void esconditeRevisado(int numeroEsconditeElegido) {
+    private static void revisarEscondite(int numeroEsconditeElegido) {
         if (numeroEsconditeElegido == 1) {
             System.out.print("Has mirado en el Árbol... ");
         } else if (numeroEsconditeElegido == 2) {
