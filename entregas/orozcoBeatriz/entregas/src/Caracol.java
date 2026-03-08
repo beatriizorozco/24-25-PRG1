@@ -65,11 +65,7 @@ public class Caracol {
             boolean aparcaCoche = Math.random() <= 0.35;
 
             profundidadCaracol = (profundidadCaracol - subidaCaracol + bajadaCaracol) + (aparcaCoche ? 2 : 0);
-
-            if (profundidadCaracol <= PROFUNDIDAD - profundidadAgua) {
-
-            }
-
+            
             System.out.println("Subida diaria caracol: "  + subidaCaracol);
             System.out.println("Bajada diaria caracol: "  + bajadaCaracol);
 
