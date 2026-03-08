@@ -18,9 +18,9 @@ public class MercadonaASCII {
         for (int tiempoActual = 1; tiempoActual <= TIEMPO_TOTAL; tiempoActual++) {
             
             minutos++;
-            if(minutos>=60){
+            if (minutos >= 60) {
                 horas++;
-                minutos=0;
+                minutos = 0;
             }
             
             int llegaAlguien = Math.random() <= PROBABILIDAD_LLEGADA ? 1 : 0;
