@@ -16,7 +16,7 @@ public class Matrices {
 
         imprime(matriz);
     }
-    static void imprime (int matriz[][]) {
+    static void imprimir (int[][] matriz) {
         for (int fila  = 0; fila < matriz.length; fila++) {
             for (int columna = 0; columna < matriz[fila].length; columna++) {
                 System.out.println(parse(matriz[fila][columna]));
