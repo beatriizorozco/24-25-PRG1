@@ -63,13 +63,11 @@ public class Edificio2 {
                         horasLuzEncendida ++;
                     } else if (probabilidadPersianaAbierta < PROBABILIDAD_PERSIANA_ABIERTA) {
                         edificio[fila][columna] = 2;
-                    } else
+                    } else {
                         edificio[fila][columna] = 0;
-
+                    }
                 }
-
             }
-
         }
         return horasLuzEncendida;
     }
