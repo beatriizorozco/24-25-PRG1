@@ -13,8 +13,8 @@ public class Halloween {
       final int MAX_CARAMELOS_POR_CASA= 3;
       final int MIN_CARAMELOS_POR_CASA = 1;
         
-    int[] caramelos = {0, 0, 0};
-    boolean[] bolsaLlena = {false, false, false};
+      int[] caramelos = {0, 0, 0};
+      boolean[] bolsaLlena = {false, false, false};
     
       int pisoActual = 0; 
       int casasVisitadas = 0; 
@@ -59,9 +59,9 @@ public class Halloween {
 
       System.out.println("\n=== Resultados Finales ===");
       System.out.println("Casas visitadas: " + casasVisitadas );
-        for (int i = 0; i < 3; i++) {
-                System.out.println("Niño " + (i + 1) + ": " + caramelos[i] + " caramelos" + (bolsaLlena[i] ? " (Bolsa llena)" : ""));
-        }
+      for (int i = 0; i < 3; i++) {
+              System.out.println("Niño " + (i + 1) + ": " + caramelos[i] + " caramelos" + (bolsaLlena[i] ? " (Bolsa llena)" : ""));
+      }
     }
 
      static int repartirCaramelos(int caramelosActuales, boolean[] bolsaLlena, int indiceNino,
