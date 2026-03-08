@@ -22,12 +22,12 @@ public class JuegoPiedraPapelTijera {
         System.out.println("¡Juguemos a piedra, papel o tijera!");
       
         do {
-          System.out.println("Elige: " + PIEDRA + " para Piedra, " + PAPEL + " para Papel y " +  TIJERA + " para Tijera");
-          eleccion  = scanner.nextInt();
+          System.out.println("Elige: " + PIEDRA + " para Piedra, " + PAPEL + " para Papel y " + TIJERA + " para Tijera");
+          eleccion = scanner.nextInt();
           if (eleccion <= LIMITE_INFERIOR || eleccion >= LIMITE_SUPERIOR) {
             System.out.println(ERROR);
           }
-          } while (eleccion <= LIMITE_INFERIOR || eleccion >= LIMITE_SUPERIOR);
+        } while (eleccion <= LIMITE_INFERIOR || eleccion >= LIMITE_SUPERIOR);
 
         String descriptor;
         descriptor = eleccion == PIEDRA ? PIEDRA_DESCRIPTOR
